@@ -6,46 +6,46 @@
 
 /*
     Encodes a first word of a command.
-    @param command_code - The command code.
-    @param first_operand_type - The first operand type.
-    @param second_operand_type - The second operand type.
-    @param ic - The instruction counter.
-    @param code_image - The code image.
-    @param param1_type - The first parameter type.
-    @param param2_type - The second parameter type.
+    @param command_code The command code.
+    @param first_operand_type The first operand type.
+    @param second_operand_type The second operand type.
+    @param ic The instruction counter.
+    @param code_image The code image.
+    @param param1_type The first parameter type.
+    @param param2_type The second parameter type.
 */
 static void encode_first_word(enum inst_name command_code, enum operand_addr_type first_operand_type, enum operand_addr_type second_operand_type, 
                           long *ic, machine_w code_image[], enum operand_addr_type param1_type, enum operand_addr_type param2_type);
 
 /*
     Encodees an immediate addressing type word.
-    @param operand - The operand to be encoded.
-    @param ic - The instruction counter.
-    @param code_image - The code image.
+    @param operand The operand to be encoded.
+    @param ic The instruction counter.
+    @param code_image The code image.
 */
 static void encode_immediate_word(int operand, long *ic, machine_w code_image[]);
 
 /*
     Encodes a label addressing type word.
-    @param operand - The operand to be encoded.
-    @param ic - The instruction counter.
-    @param code_image - The code image.
+    @param operand The operand to be encoded.
+    @param ic The instruction counter.
+    @param code_image The code image.
 */
 static void encode_label_word(char label_operand[], long *ic, machine_w code_image[]);
 
 /*
     Encodes a register addressing type word.
-    @param first_register - The first register to be encoded.
-    @param second_register - The second register to be encoded.
-    @param ic - The instruction counter.
-    @param code_image - The code image.
+    @param first_register The first register to be encoded.
+    @param second_register The second register to be encoded.
+    @param ic The instruction counter.
+    @param code_image The code image.
 */
 static void encode_register_word(char first_register, char second_register, long *ic, machine_w code_image[]);
 
 /*
     Encodes an integer to a 12 bits word.
-    @param value - The integer to be encoded.
-    @return - The encoded word.
+    @param value The integer to be encoded.
+    @return The encoded word.
 */
 static imdt_drct_w encode_int_12_bits(int value);
 

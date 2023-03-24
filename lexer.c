@@ -9,65 +9,65 @@
 
 /*
     This function gets a line and stores the directive in the lex tree.
-    @param line - the line to parse
-    @param index - the index of the line to start parsing from
-    @param lt - the lex tree to store the directive in
+    @param line The line to parse
+    @param index The index of the line to start parsing from
+    @param lt The lex tree to store the directive in
 */
 static void get_directive(const char *line, int *index, struct lex_tree *lt);
 
 /*
     This function gets a line and stores the string in the lex tree.
-    @param line - the line to parse
-    @param index - the index of the line to start parsing from
-    @param lt - the lex tree to store the string in
+    @param line The line to parse
+    @param index The index of the line to start parsing from
+    @param lt The lex tree to store the string in
 */
 static void get_string(const char *line, int *index, struct lex_tree *lt);
 
 /*
     This function gets a line and stores the data in the lex tree.
-    @param line - the line to parse
-    @param index - the index of the line to start parsing from
-    @param lt - the lex tree to store the data in
+    @param line The line to parse
+    @param index The index of the line to start parsing from
+    @param lt The lex tree to store the data in
 */
 static void get_data(const char *line, int *index, struct lex_tree *lt);
 
 /*
     This function gets a line and stores the entry/extern label in the lex tree.
-    @param line - the line to parse
-    @param index - the index of the line to start parsing from
-    @param lt - the lex tree to store the entry/extern label in
+    @param line The line to parse
+    @param index The index of the line to start parsing from
+    @param lt The lex tree to store the entry/extern label in
 */
 static void get_ent_extern_label(const char *line, int *index, struct lex_tree *lt);
 
 /*
     This function gets a line and stores the instruction in the lex tree.
-    @param line - the line to parse
-    @param index - the index of the line to start parsing from
-    @param lt - the lex tree to store the instruction in
+    @param line The line to parse
+    @param index The index of the line to start parsing from
+    @param lt The lex tree to store the instruction in
 */
 static void get_code_instruction(const char *line, int *index, struct lex_tree *lt);
 
 /*
     This function gets a line and stores the operands of a set A instruction in the lex tree.
-    @param line - the line to parse
-    @param index - the index of the line to start parsing from
-    @param lt - the lex tree to store the operands in
+    @param line The line to parse
+    @param index The index of the line to start parsing from
+    @param lt The lex tree to store the operands in
 */
 static void get_set_a_operands(const char *line, int *index, struct lex_tree *lt);
 
 /*
     This function gets a line and stores the operands of a set B instruction in the lex tree.
-    @param line - the line to parse
-    @param index - the index of the line to start parsing from
-    @param lt - the lex tree to store the operands in
+    @param line The line to parse
+    @param index The index of the line to start parsing from
+    @param lt The lex tree to store the operands in
 */
 static void get_set_b_operands(const char *line, int *index, struct lex_tree *lt);
 
 /* 
     This line gets an operand and stores its type in the lex tree, and returns its addressing type
-    @param operand - the operand to analyze
-    @param lt - the lex tree to store the operand type in
-    @return - the addressing type of the operand    
+    @param operand The operand to analyze
+    @param lt The lex tree to store the operand type in
+    @return The addressing type of the operand    
 */
 static enum operand_addr_type analyze_operand(char *operand, struct  lex_tree *lt);
 

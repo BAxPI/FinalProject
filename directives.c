@@ -4,15 +4,15 @@
 
 /*
     This functions recieves a char and encodes it to a data word.
-    @param c - The char to be encoded.
-    @return - The encoded data word.
+    @param c The char to be encoded.
+    @return The encoded data word.
 */
 static data_w encode_char(char c);
 
 /*
     This functions recieves an integer and encodes it to a data word.
-    @param value - The integer to be encoded.
-    @return - The encoded data word.
+    @param value The integer to be encoded.
+    @return The encoded data word.
 */
 static data_w encode_int_14_bits(short int value);
 

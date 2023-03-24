@@ -105,8 +105,8 @@ struct lex_tree {
 
 /*
     This function gets a line and returns an Abstract Syntax Tree of the line.
-    @param line - the line to parse
-    @return - the Abstract Syntax Tree of the line (struct lex_tree)
+    @param line The line to parse
+    @return The Abstract Syntax Tree of the line (struct lex_tree)
 */
 struct lex_tree lexer_get_lex_tree_from_line(const char * line);
 

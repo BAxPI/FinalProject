@@ -11,8 +11,8 @@
 
 /*
     This function recieves a file name and process it to machine code.
-    @param filename - The file to be processed.
-    @return - TRUE if the file process succeeded and FALSE otherwise.
+    @param filename The file to be processed.
+    @return TRUE if the file process succeeded and FALSE otherwise.
 */
 bool process_file(char *filename); 
 

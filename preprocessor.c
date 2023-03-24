@@ -90,10 +90,7 @@ bool preprocess_file(char *filename){
     if(macro_name != NULL){
         free(macro_name); 
     }
-    
-
     return TRUE;
-    
 }
 
 
