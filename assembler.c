@@ -102,7 +102,7 @@ bool process_file(char *filename){
         
     }
     update_data_symbols_address(symbol_table, ic);
-    
+   
     /* Second pass */
     rewind(file_desc);
     if(success){
@@ -113,7 +113,7 @@ bool process_file(char *filename){
         spass_label_encoding(symbol_table, code_image, ic);
     }
 
-    if(ic + dc > MEMORY_SIZE - 100){
+    if(ic + dc > MEMORY_SIZE - 100){ /* First 100 memory cells reserved for the system. */
             print_error_msg(&current_line, "The memory size is too small for the file.");
             success = FALSE;
     }

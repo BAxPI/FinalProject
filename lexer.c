@@ -350,68 +350,53 @@ static void get_code_instruction(const char *line, int *index, struct lex_tree *
     potential_command[len] = '\0';
     (*index) += len;
     
+    lt->lex_union_option = lex_union_asm_inst;
     if(strcmp(potential_command, "mov") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_mov;
     }
     else if(strcmp(potential_command, "cmp") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_cmp;
     }
     else if(strcmp(potential_command, "add") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_add;
     }
     else if(strcmp(potential_command, "sub") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_sub;
     }
     else if(strcmp(potential_command, "not") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_not;
     }
     else if(strcmp(potential_command, "clr") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_clr;
     }
     else if(strcmp(potential_command, "lea") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_lea;
     }
     else if(strcmp(potential_command, "inc") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_inc;
     }
     else if(strcmp(potential_command, "dec") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_dec;
     }
     else if(strcmp(potential_command, "jmp") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_jmp;
     }
     else if(strcmp(potential_command, "bne") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_bne;
     }
     else if(strcmp(potential_command, "red") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_red;
     }
     else if(strcmp(potential_command, "prn") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_prn;
     }
     else if(strcmp(potential_command, "jsr") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_jsr;
     }
     else if(strcmp(potential_command, "rts") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_rts;
     }
     else if(strcmp(potential_command, "stop") == 0){
-        lt->lex_union_option = lex_union_asm_inst;
         lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_stop;
     }
     else{

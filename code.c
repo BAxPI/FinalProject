@@ -59,18 +59,18 @@ bool encode_instruction(line_info *line, struct lex_tree *lt, machine_w *code_im
             if(lt->asm_inst_asm_dir.asm_inst.inst_name == lex_inst_lea){
                 if(lt->asm_inst_asm_dir.asm_inst.asm_inst_sets.asm_inst_setA.oat[0] == lex_op_addr_type_immed ||
                     lt->asm_inst_asm_dir.asm_inst.asm_inst_sets.asm_inst_setA.oat[0] == lex_op_addr_type_register){
-                        print_error_msg(line, "Invalid source operand addressing type for lea command");
+                        print_error_msg(line, "Illegal addressing type for source operand for lea command");
                         return FALSE;
                 }           
                 else if(lt->asm_inst_asm_dir.asm_inst.asm_inst_sets.asm_inst_setA.oat[1] == lex_op_addr_type_immed){
-                    print_error_msg(line, "Invalid destination operand type for lea command.");
+                    print_error_msg(line, "Illegal destination operand type for lea command.");
                     return FALSE;
                 }
             }
             /* mov, cmp, add, sub */
             if(lt->asm_inst_asm_dir.asm_inst.asm_inst_sets.asm_inst_setA.oat[1] == lex_op_addr_type_immed && 
                 lt->asm_inst_asm_dir.asm_inst.inst_name != lex_inst_cmp){
-                    print_error_msg(line, "Invalid destination addressing type for mov, add, sub commands.");
+                    print_error_msg(line, "Illegal addressing type for destination operand for mov, add, sub commands.");
                     return FALSE;
             }
             encode_first_word(lt->asm_inst_asm_dir.asm_inst.inst_name, lt->asm_inst_asm_dir.asm_inst.asm_inst_sets.asm_inst_setA.oat[0], 

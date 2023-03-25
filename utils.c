@@ -118,9 +118,18 @@ void free_splitted_string(char **splitted_string, int count){
 void print_error_msg(line_info *line, const char *format, ...) {
     va_list args;
     va_start(args, format);
+    printf("\033[0;31m"); /* Red */
     printf("ERROR: ");
+    printf("\033[0m"); /* Reset */
     vprintf(format, args);
-    printf(" in the file: %s in line %d\n", line->filename, line->line_number);
+    printf(" in the file: ");
+    printf("\033[0;35m"); /* Purple */
+    printf("%s", line->filename);
+    printf("\033[0m"); /* Reset */
+    printf(" in line: ");
+    printf("\033[0;35m"); /* Purple */
+    printf("%d\n", line->line_number);
+    printf("\033[0m"); /* Reset */
     va_end(args);
 }
 
@@ -176,6 +185,7 @@ void print_mw(machine_w mw) {
             printf("%d", (value >> i) & 1);
         }
     }
+    printf("\n");
 }
 
 
