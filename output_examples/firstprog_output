@@ -1,0 +1,70 @@
+[0;31mERROR: [0mInvalid label in the file: [0;35mfirstprog.am[0m in line: [0;35m1
+[0m[0;31mERROR: [0mInvalid label in the file: [0;35mfirstprog.am[0m in line: [0;35m2
+[0m[0;31mERROR: [0mIllegal addressing type for destination operand for mov, add, sub commands. in the file: [0;35mfirstprog.am[0m in line: [0;35m3
+[0m[0;31mERROR: [0mFirst operand is illegal. in the file: [0;35mfirstprog.am[0m in line: [0;35m4
+[0m[0;31mERROR: [0mIllegal operand addressing type. in the file: [0;35mfirstprog.am[0m in line: [0;35m5
+[0m[0;31mERROR: [0mIllegal addressing type for source operand for lea command in the file: [0;35mfirstprog.am[0m in line: [0;35m6
+[0m[0;31mERROR: [0mIllegal destination operand type for lea command. in the file: [0;35mfirstprog.am[0m in line: [0;35m7
+[0m[0;31mERROR: [0mIllegal operand addressing type. in the file: [0;35mfirstprog.am[0m in line: [0;35m8
+[0m[0;31mERROR: [0mIllegal operand addressing type. in the file: [0;35mfirstprog.am[0m in line: [0;35m9
+[0m[0;31mERROR: [0mEntry/Extern instruction can't be in label definition. in the file: [0;35mfirstprog.am[0m in line: [0;35m11
+[0m[0;31mERROR: [0mEntry/Extern must be followed by a label. in the file: [0;35mfirstprog.am[0m in line: [0;35m12
+[0m[0;31mERROR: [0mEntry/Extern instruction can't be in label definition. in the file: [0;35mfirstprog.am[0m in line: [0;35m13
+[0m[0;31mERROR: [0mInvalid label in the file: [0;35mfirstprog.am[0m in line: [0;35m14
+[0m[0;31mERROR: [0mIllegal operand. in the file: [0;35mfirstprog.am[0m in line: [0;35m20
+[0m[0;31mERROR: [0mString must end with quotes("). in the file: [0;35mfirstprog.am[0m in line: [0;35m22
+[0m[0;31mERROR: [0mDetected trailing charachters after the end of the string. in the file: [0;35mfirstprog.am[0m in line: [0;35m24
+[0m[0;31mERROR: [0mCommand doesn't exist. in the file: [0;35mfirstprog.am[0m in line: [0;35m25
+[0m[0;31mERROR: [0mInvalid character, expected ','. in the file: [0;35mfirstprog.am[0m in line: [0;35m26
+[0m[0;31mERROR: [0mConsecutive commas detected. in the file: [0;35mfirstprog.am[0m in line: [0;35m27
+[0m[0;31mERROR: [0mConsecutive commas detected. in the file: [0;35mfirstprog.am[0m in line: [0;35m28
+[0m[0;31mERROR: [0m.string instruction must have a string. in the file: [0;35mfirstprog.am[0m in line: [0;35m29
+[0m[0;31mERROR: [0m.data instruction must have at least one integer. in the file: [0;35mfirstprog.am[0m in line: [0;35m30
+[0m[0;31mERROR: [0mInvalid number. in the file: [0;35mfirstprog.am[0m in line: [0;35m31
+[0m[0;31mERROR: [0mInvalid character, expected ','. in the file: [0;35mfirstprog.am[0m in line: [0;35m32
+[0m[0;31mERROR: [0mInvalid character, expected ','. in the file: [0;35mfirstprog.am[0m in line: [0;35m33
+[0m[0;31mERROR: [0mCommand doesn't exist. in the file: [0;35mfirstprog.am[0m in line: [0;35m34
+[0m[0;31mERROR: [0mCommand doesn't exist. in the file: [0;35mfirstprog.am[0m in line: [0;35m35
+[0m[0;31mERROR: [0mFirst operand is illegal. in the file: [0;35mfirstprog.am[0m in line: [0;35m36
+[0m[0;31mERROR: [0mFirst operand is illegal. in the file: [0;35mfirstprog.am[0m in line: [0;35m37
+[0m[0;31mERROR: [0mFirst operand is illegal. in the file: [0;35mfirstprog.am[0m in line: [0;35m38
+[0m[0;31mERROR: [0mFirst operand is illegal. in the file: [0;35mfirstprog.am[0m in line: [0;35m39
+[0m[0;31mERROR: [0mFirst operand is illegal. in the file: [0;35mfirstprog.am[0m in line: [0;35m40
+[0m[0;31mERROR: [0mIllegal operand. in the file: [0;35mfirstprog.am[0m in line: [0;35m41
+[0m[0;31mERROR: [0mIllegal operand. in the file: [0;35mfirstprog.am[0m in line: [0;35m42
+[0m[0;31mERROR: [0mDetected trailing charachters after the operand.
+Note that spaces aren't allowed in group B operand, and that only one operand is allowed. in the file: [0;35mfirstprog.am[0m in line: [0;35m44
+[0m[0;31mERROR: [0mDetected trailing charachters after the operand.
+Note that spaces aren't allowed in group B operand, and that only one operand is allowed. in the file: [0;35mfirstprog.am[0m in line: [0;35m45
+[0m[0;31mERROR: [0mDetected trailing charachters after the operand.
+Note that spaces aren't allowed in group B operand, and that only one operand is allowed. in the file: [0;35mfirstprog.am[0m in line: [0;35m46
+[0m[0;31mERROR: [0mInvalid label name. in the file: [0;35mfirstprog.am[0m in line: [0;35m47
+[0m[0;31mERROR: [0mDetected trailing charachters after the operand.
+Note that spaces aren't allowed in group B operand, and that only one operand is allowed. in the file: [0;35mfirstprog.am[0m in line: [0;35m48
+[0m[0;31mERROR: [0mMissing closing parenthesis. in the file: [0;35mfirstprog.am[0m in line: [0;35m49
+[0m[0;31mERROR: [0mDetected trailing charachters after the operand.
+Note that spaces aren't allowed in group B operand, and that only one operand is allowed. in the file: [0;35mfirstprog.am[0m in line: [0;35m50
+[0m[0;31mERROR: [0mCommand doesn't exist. in the file: [0;35mfirstprog.am[0m in line: [0;35m51
+[0m[0;31mERROR: [0mCommand doesn't exist. in the file: [0;35mfirstprog.am[0m in line: [0;35m52
+[0m[0;31mERROR: [0mCommand doesn't exist. in the file: [0;35mfirstprog.am[0m in line: [0;35m53
+[0m[0;31mERROR: [0mCommand doesn't exist. in the file: [0;35mfirstprog.am[0m in line: [0;35m54
+[0m[0;31mERROR: [0mCommand doesn't exist. in the file: [0;35mfirstprog.am[0m in line: [0;35m55
+[0m[0;31mERROR: [0mSet A command must have two operands, separated by a comma. in the file: [0;35mfirstprog.am[0m in line: [0;35m56
+[0m[0;31mERROR: [0mSet A command must have two operands, separated by a comma. in the file: [0;35mfirstprog.am[0m in line: [0;35m57
+[0m[0;31mERROR: [0mDetected trailing charachters after the second operand. in the file: [0;35mfirstprog.am[0m in line: [0;35m58
+[0m[0;31mERROR: [0mLeading comma detected, must start with an operand. in the file: [0;35mfirstprog.am[0m in line: [0;35m59
+[0m[0;31mERROR: [0mMissing operand. in the file: [0;35mfirstprog.am[0m in line: [0;35m60
+[0m[0;31mERROR: [0mDetected trailing charachters after the operand.
+Note that spaces aren't allowed in group B operand, and that only one operand is allowed. in the file: [0;35mfirstprog.am[0m in line: [0;35m61
+[0m[0;31mERROR: [0mDetected trailing characters, Group C instructions do not have operands. in the file: [0;35mfirstprog.am[0m in line: [0;35m62
+[0m[0;31mERROR: [0mDetected trailing characters, Group C instructions do not have operands. in the file: [0;35mfirstprog.am[0m in line: [0;35m63
+[0m[0;31mERROR: [0mDetected trailing characters, Group C instructions do not have operands. in the file: [0;35mfirstprog.am[0m in line: [0;35m64
+[0m[0;31mERROR: [0mSecond operand is illegal. in the file: [0;35mfirstprog.am[0m in line: [0;35m65
+[0m[0;31mERROR: [0mConsecutive commnas detected. in the file: [0;35mfirstprog.am[0m in line: [0;35m66
+[0m[0;31mERROR: [0mLeading comma detected, must start with an operand. in the file: [0;35mfirstprog.am[0m in line: [0;35m67
+[0m[0;31mERROR: [0mDetected trailing characters, Group C instructions do not have operands. in the file: [0;35mfirstprog.am[0m in line: [0;35m68
+[0m[0;31mERROR: [0mDetected trailing charachters after the second operand. in the file: [0;35mfirstprog.am[0m in line: [0;35m69
+[0m[0;31mERROR: [0mFirst operand is illegal. in the file: [0;35mfirstprog.am[0m in line: [0;35m70
+[0m[0;31mERROR: [0mDetected trailing charachters after the operand.
+Note that spaces aren't allowed in group B operand, and that only one operand is allowed. in the file: [0;35mfirstprog.am[0m in line: [0;35m71
+[0m

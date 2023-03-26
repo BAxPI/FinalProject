@@ -168,9 +168,6 @@ void free_code_image(machine_w code_image[], long ic) {
     }
 }
 
-
-
- 
 void print_mw(machine_w mw) {
     int i =0;
     unsigned int value;
