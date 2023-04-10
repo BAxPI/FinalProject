@@ -3,7 +3,6 @@
     The lexer is a recursive descent parser that creates an Abstract Syntax Tree of the line.
 */
 
-
 #ifndef assembler_lexer
 #define assembler_lexer
 
@@ -55,7 +54,7 @@ struct lex_tree {
     enum {
         lex_union_lex_error = -1,
         lex_union_asm_inst,
-        lex_union_asm_dir,   /* .dir,.string,.extern,.entry */
+        lex_union_asm_dir,   /* .dir,.string,.extern,.entry */  
         lex_union_asm_empty_line,
         lex_union_asm_comment
     }lex_union_option;

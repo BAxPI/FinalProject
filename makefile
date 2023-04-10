@@ -39,7 +39,7 @@ lexer.o: lexer.c lexer.h $(GLOBAL_DEPS)
 	$(CC) -c lexer.c $(CFLAGS) -o $@
 
 clean:
-	rm -rf *.o
+	rm -rf *.o *.am *.ob *.ent *.ext 
 
 
 

@@ -22,7 +22,6 @@ bool first_pass_line_process(line_info line, s_table *symbol_table, long *ic, lo
             else{
                 print_error_msg(&line, "Label already defined.");
                 return FALSE;
-
             }            
         }
         if(lt->lex_union_option == lex_union_asm_dir){

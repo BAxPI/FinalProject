@@ -339,10 +339,29 @@ static void get_ent_extern_label(const char *line, int *index, struct lex_tree *
     } 
 }
 
+
 static void get_code_instruction(const char *line, int *index, struct lex_tree *lt){
     int len;
     char *potential_command;
-
+    struct command{char *name; enum inst_name inst;};
+    struct command commands[] = {
+        {"mov", lex_inst_mov},
+        {"cmp", lex_inst_cmp},
+        {"add", lex_inst_add},
+        {"sub", lex_inst_sub},
+        {"not", lex_inst_not},
+        {"clr", lex_inst_clr},
+        {"lea", lex_inst_lea},
+        {"inc", lex_inst_inc},
+        {"dec", lex_inst_dec},
+        {"jmp", lex_inst_jmp},
+        {"bne", lex_inst_bne},
+        {"red", lex_inst_red},
+        {"prn", lex_inst_prn},
+        {"jsr", lex_inst_jsr},
+        {"rts", lex_inst_rts},
+        {"stop", lex_inst_stop}
+    };
     for(len = 0; line[*index + len] != '\0' && line[*index + len] != '\n' && 
                 line[*index + len] != EOF && !(isspace(line[*index + len])); len++);
     potential_command = malloc(sizeof(char) * len + 1);
@@ -351,62 +370,16 @@ static void get_code_instruction(const char *line, int *index, struct lex_tree *
     (*index) += len;
     
     lt->lex_union_option = lex_union_asm_inst;
-    if(strcmp(potential_command, "mov") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_mov;
-    }
-    else if(strcmp(potential_command, "cmp") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_cmp;
-    }
-    else if(strcmp(potential_command, "add") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_add;
-    }
-    else if(strcmp(potential_command, "sub") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_sub;
-    }
-    else if(strcmp(potential_command, "not") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_not;
-    }
-    else if(strcmp(potential_command, "clr") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_clr;
-    }
-    else if(strcmp(potential_command, "lea") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_lea;
-    }
-    else if(strcmp(potential_command, "inc") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_inc;
-    }
-    else if(strcmp(potential_command, "dec") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_dec;
-    }
-    else if(strcmp(potential_command, "jmp") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_jmp;
-    }
-    else if(strcmp(potential_command, "bne") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_bne;
-    }
-    else if(strcmp(potential_command, "red") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_red;
-    }
-    else if(strcmp(potential_command, "prn") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_prn;
-    }
-    else if(strcmp(potential_command, "jsr") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_jsr;
-    }
-    else if(strcmp(potential_command, "rts") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_rts;
-    }
-    else if(strcmp(potential_command, "stop") == 0){
-        lt->asm_inst_asm_dir.asm_inst.inst_name = lex_inst_stop;
-    }
-    else{
-        lt->lex_union_option = lex_union_lex_error;
-        strcpy(lt->lex_error, "Command doesn't exist.");
-    }
-    free(potential_command);
-    return;
-
-}
+    {
+        struct command *ptr = NULL;
+        for(ptr = commands; ptr != NULL; ptr++){
+            if(strcmp(potential_command, ptr->name) == 0){
+                lt->asm_inst_asm_dir.asm_inst.inst_name = ptr->inst;
+                return;
+            }
+        }
+    }  
+} 
 
 
 static void get_set_a_operands(const char *line, int *index, struct lex_tree *lt){

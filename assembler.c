@@ -55,6 +55,7 @@ bool process_file(char *filename){
     struct lex_tree line_structure;
 
 
+
     /* Spread the macros from the origin file */
     if(!preprocess_file(filename)){
         printf("Couldn't spread the macros correctly into %s.as\n", filename);
@@ -102,7 +103,7 @@ bool process_file(char *filename){
         
     }
     update_data_symbols_address(symbol_table, ic);
-   
+    
     /* Second pass */
     rewind(file_desc);
     if(success){
