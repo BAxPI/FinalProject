@@ -41,6 +41,13 @@ If the file(s) are syntaxly correct, the program will generate 4 output files in
 If the file(s) has errors the assembler won't produce any output file except the `.am file` and will print to the `stdout` all the errors it found.
 Here's an example of file that contains errors: 
 
+errors.as contains errors
+
+![errors.as](https://github.com/BAxPI/FinalProject/blob/main/images/errors_example.png?raw=true)
+
+here are the error messages you should excpect to get:
+
+![errors_output](https://github.com/BAxPI/FinalProject/blob/main/images/errors_output.png?raw=true)
  
  That's it! You should now have successfully run the program and generated the expected output files.
 
