@@ -342,7 +342,7 @@ static void get_ent_extern_label(const char *line, int *index, struct lex_tree *
 
 static void get_code_instruction(const char *line, int *index, struct lex_tree *lt){
     int len;
-    char *potential_command;
+    char *potential_command = NULL;
     struct command{char *name; enum inst_name inst;};
     struct command commands[] = {
         {"mov", lex_inst_mov},
@@ -372,12 +372,15 @@ static void get_code_instruction(const char *line, int *index, struct lex_tree *
     lt->lex_union_option = lex_union_asm_inst;
     {
         struct command *ptr = NULL;
-        for(ptr = commands; ptr != NULL; ptr++){
+        int i;
+        for(ptr = commands, i = 0; i < 16; i++, ptr++){
             if(strcmp(potential_command, ptr->name) == 0){
                 lt->asm_inst_asm_dir.asm_inst.inst_name = ptr->inst;
                 return;
             }
         }
+        lt->lex_union_option = lex_union_lex_error;
+        strcpy(lt->lex_error, "Command doesn't exist.");
     }  
 } 
 

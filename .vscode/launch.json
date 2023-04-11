@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/assembler",
-            "args": ["pdf"],
+            "args": ["errors"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
