@@ -13,6 +13,9 @@ To run the program, follow these steps:
    The file(s) should be in the .as format and the input should be provided without the .as extension.</p>
 Here's an example command for assembling a single file named program:
 
+program.as
+
+![program.as](https://github.com/BAxPI/FinalProject/blob/main/images/input_example.png?raw=true)
 
 ```console
 $ assembler program
@@ -20,10 +23,21 @@ $ assembler program
 
 If the file(s) are syntaxly correct, the program will generate 4 output files in the same directory:
  <p>1. <code>.am</code> - Contains the macros from the original file spread, comment lines (starting with ;) deleted, and empty lines deleted.</p>
- ![program.as](https://github.com/BAxPI/FinalProject/blob/main/images/input_example.png?raw=true)
- <p>2. <code>.obj</code> - Contains the binary code of the source code.</p>
+ 
+ ![program.am](https://github.com/BAxPI/FinalProject/blob/main/images/am_output.png?raw=true)
+ 
+ <p>2. <code>.ob</code> - Contains the binary code of the source code.</p>
+ 
+ ![program.ob](https://github.com/BAxPI/FinalProject/blob/main/images/ob_output.png?raw=true)
+ 
  <p>3. <code>.ext</code> - Contains the extern symbols in the source code.</p>
+ 
+ ![program.ext](https://github.com/BAxPI/FinalProject/blob/main/images/ext_output.png?raw=true)
+ 
  <p>4. <code>.ent</code> - Contains the entry symbols in the source code.</p>
+ 
+ ![program.ent](https://github.com/BAxPI/FinalProject/blob/main/images/ent_output.png?raw=true)
+ 
  That's it! You should now have successfully run the program and generated the expected output files.
 
  <h2> Directory Structure (Modules) </h2>
