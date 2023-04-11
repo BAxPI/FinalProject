@@ -37,6 +37,10 @@ If the file(s) are syntaxly correct, the program will generate 4 output files in
  <p>4. <code>.ent</code> - Contains the entry symbols in the source code.</p>
  
  ![program.ent](https://github.com/BAxPI/FinalProject/blob/main/images/ent_output.png?raw=true)
+
+If the file(s) has errors the assembler won't produce any output file except the `.am file` and will print to the `stdout` all the errors it found.
+Here's an example of file that contains errors: 
+
  
  That's it! You should now have successfully run the program and generated the expected output files.
 
