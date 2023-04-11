@@ -20,7 +20,7 @@ $ assembler program
 
 If the file(s) are syntaxly correct, the program will generate 4 output files in the same directory:
  <p>1. <code>.am</code> - Contains the macros from the original file spread, comment lines (starting with ;) deleted, and empty lines deleted.</p>
- ![program.as](input_example.png)
+ ![program.as](images/input_example.png)
  <p>2. <code>.obj</code> - Contains the binary code of the source code.</p>
  <p>3. <code>.ext</code> - Contains the extern symbols in the source code.</p>
  <p>4. <code>.ent</code> - Contains the entry symbols in the source code.</p>
