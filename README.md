@@ -8,8 +8,8 @@
 To run the program, follow these steps:
 
 <p>1. Open a terminal window and navigate to the directory where the program files are located.</p>
-<p>2. Run the `make` command to compile the program.</p>
-<p>3. Run the `assembler` command followed by the name of the file(s) you want to assemble.</p>
+<p>2. Run the <code>make</code> command to compile the program.</p>
+<p>3. Run the <code>assembler</code> command followed by the name of the file(s) you want to assemble.</p>
    The file(s) should be in the .as format and the input should be provided without the .as extension.</p>
 Here's an example command for assembling a single file named program:
 
